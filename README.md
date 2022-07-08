@@ -9,4 +9,4 @@ My task create a simple calendar application that allows a user to save events f
 ## Screenshot and deployable URL
 deployable url: https://nicholaszervos.github.io/work-day-scheduler/
 
-screenshot: 
+screenshot: <img width="1728" alt="Screen Shot 2022-07-07 at 9 55 27 PM" src="https://user-images.githubusercontent.com/105948652/177901193-deb9ac53-410a-4059-aff8-a472bbfa6f1a.png">
