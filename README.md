@@ -7,4 +7,6 @@ My task create a simple calendar application that allows a user to save events f
 * save button has icon and now the text for that event is saved in local storage.
 
 ## Screenshot and deployable URL
-deployable url:
+deployable url: https://nicholaszervos.github.io/work-day-scheduler/
+
+screenshot: 
