@@ -1,5 +1,22 @@
 $(document).ready(function(){
-
+var actualHour = moment().hours();
+    console.log(actualHour)
+var slotRows = $('textarea')
+for (var i = 0; i < slotRows.length; ++i) {
+    var textAreaObject = slotRows[i]
+    var rowHour = $(textAreaObject).parent().attr('id').split('-')[1]* 1;
+    console.log(rowHour)
+    // textAreaObject.style.backgroundColor = "red";
+    if (rowHour < actualHour) {
+        textAreaObject.style.backgroundColor = "grey";
+    }
+    else if (rowHour > actualHour) {
+        textAreaObject.style.backgroundColor = "red";
+    }
+    else {
+        textAreaObject.style.backgroundColor = "green"
+    }
+}
 // add date using moment
 
 //var currentDay = document.getElementById('currentDay')
@@ -24,10 +41,9 @@ $('#hour-14 textarea').val(localStorage.getItem('hour-14'));
 $('#hour-15 textarea').val(localStorage.getItem('hour-15'));
 $('#hour-16 textarea').val(localStorage.getItem('hour-16'));
 $('#hour-17 textarea').val(localStorage.getItem('hour-17'));
-
+console.log(slotRows[0].value)
 // color code hours based on time of day
 // use moment js to grab actual time of day
-var actualHour = moment().hours();
 
 // grab time of time block from id - $(this) will come in handy here
 
